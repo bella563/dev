@@ -1,0 +1,199 @@
+/* Section About */
+.about-section {
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    border-radius: 15px;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.about-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Titre Principal */
+.about-section h1 {
+    font-size: 2.8rem;
+    color: #003366;
+    margin-bottom: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+/* Style du texte général */
+.about-info {
+    font-size: 1.15rem;
+    color: #555;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-info p {
+    margin-bottom: 30px;
+}
+
+.about-info ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 20px;
+    animation: fadeInUp 2s ease-out;
+}
+
+.about-info ul li {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.about-info ul li:hover {
+    background-color: #f1f5f9;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    color: #003366;
+    transition: all 0.3s ease-in-out;
+}
+
+.about-info h2 {
+    font-size: 2.2rem;
+    color: #005f73;
+    margin-top: 50px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+/* Animation des éléments */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Animation des éléments en "fadeIn" pour chaque item */
+.wow {
+    visibility: hidden;
+    animation-duration: 1.5s;
+}
+
+.wow.fadeIn {
+    visibility: visible;
+    animation-name: fadeIn;
+}
+
+.wow.fadeInUp {
+    visibility: visible;
+    animation-name: fadeInUp;
+}
+
+/* Animation pour les icônes */
+.about-info ul li i {
+    font-size: 1.5rem;
+    color: #005f73;
+    margin-right: 15px;
+    vertical-align: middle;
+    transition: color 0.3s ease;
+}
+
+.about-info ul li i:hover {
+    color: #ff6600;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .about-section h1 {
+        font-size: 2.4rem;
+    }
+    
+    .about-info {
+        font-size: 1.05rem;
+    }
+
+    .about-info h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .about-section h1 {
+        font-size: 2rem;
+    }
+    
+    .about-info {
+        font-size: 1rem;
+        padding: 0 15px;
+    }
+
+    .about-info ul li {
+        font-size: 1rem;
+    }
+    
+    .about-info h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        padding: 40px 20px;
+    }
+    
+    .about-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .about-info {
+        font-size: 0.95rem;
+    }
+
+    .about-info ul li {
+        font-size: 0.95rem;
+    }
+    
+    .about-info h2 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-section h1 {
+        font-size: 1.6rem;
+    }
+
+    .about-info {
+        font-size: 0.9rem;
+    }
+
+    .about-info ul li {
+        font-size: 0.9rem;
+    }
+
+    .about-info h2 {
+        font-size: 1.4rem;
+    }
+}
