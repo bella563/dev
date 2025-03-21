@@ -91,8 +91,42 @@
     }
   }
   
+  function toggleText1() {
+    const extraText1 = document.getElementById('extra-text1');
+    const button = document.querySelector('.read_more_btn1');
+    
+    if (extraText1.style.display === "none") {
+      extraText1.style.display = "block";
+      button.textContent = "Read Less";
+    } else {
+      extraText1.style.display = "none";
+      button.textContent = "Read More";
+    }
+  }
+  function toggleText2() {
+    const extraText2 = document.getElementById('extra-text2');
+    const button = document.querySelector('.read_more_btn2');
+    
+    if (extraText2.style.display === "none") {
+      extraText2.style.display = "block";
+      button.textContent = "Read Less";
+    } else {
+      extraText2.style.display = "none";
+      button.textContent = "Read More";
+    }
+  }
 
-
-
+  function toggleText3() {
+    const extraText3 = document.getElementById('extra-text3');
+    const button = document.querySelector('.read_more_btn3');
+    
+    if (extraText3.style.display === "none") {
+      extraText3.style.display = "block";
+      button.textContent = "Read Less";
+    } else {
+      extraText3.style.display = "none";
+      button.textContent = "Read More";
+    }
+  }
 
   
