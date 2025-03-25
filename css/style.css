@@ -757,7 +757,7 @@ a:focus {
 
 .info_section {
   padding: 75px 0;
-  background-color: black;
+  background-color: #333;
   text-align: center;
   color: #fff;
 }
@@ -864,7 +864,7 @@ a:focus {
 
 /* footer section*/
 .footer_section {
-  background-color: black;
+  background-color: #333;
 }
 
 .footer_section p {
@@ -877,6 +877,8 @@ a:focus {
 
 .footer_section a {
   color: inherit;
+  color: #ff6f61;
+
 }
 
 
