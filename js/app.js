@@ -128,5 +128,27 @@
       button.textContent = "Read More";
     }
   }
+  document.addEventListener("DOMContentLoaded", function () {
+    const valeurs = document.querySelectorAll(".valeur");
+
+    const revealOnScroll = () => {
+        valeurs.forEach((valeur) => {
+            const rect = valeur.getBoundingClientRect();
+            if (rect.top < window.innerHeight - 50) {
+                valeur.style.opacity = 1;
+                valeur.style.transform = "translateY(0)";
+            }
+        });
+    };
+
+    valeurs.forEach((valeur) => {
+        valeur.style.transform = "translateY(30px)";
+        valeur.style.transition = "opacity 0.6s ease-out, transform 0.6s ease-out";
+    });
+
+    window.addEventListener("scroll", revealOnScroll);
+    revealOnScroll();
+});
+
 
   

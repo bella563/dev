@@ -444,8 +444,7 @@ a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-          background-image: url('../images/background-industrie.jpg'); 
-
+background-color: #dbe0e6;
 }
 
 .professional_section .img-box img {
@@ -484,7 +483,7 @@ a:focus {
       color: white; 
   }
   50% {
-      color: greenyellow; 
+      color: #0c2c3c; 
   }
   100% {
       color: white; 
@@ -1454,3 +1453,154 @@ main {
 
 
 
+/* Section Nos Valeurs */
+.nos-valeurs {
+  padding: 60px 20px;
+  color: #333;
+  text-align: center;
+}
+
+.nos-valeurs h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.nos-valeurs h2::after {
+  content: '';
+  text-align: center;
+  display: block;
+  width: 50%;
+  height: 4px;
+  background-color:  #333;
+
+  margin: 10px auto;
+  transition: width 0.3s ease-in-out;
+}
+
+.nos-valeurs h2:hover::after {
+  width: 100%;
+}
+
+/* Conteneur des valeurs */
+.valeurs-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Carte individuelle */
+.valeur {
+  background: white;
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  margin: 2%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  opacity: 0;
+}
+
+/* Effet au survol */
+.valeur:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+
+.main h1{
+  text-align:center;
+  text-transform: uppercase;
+  color: 
+#94cce4; 
+margin-bottom: 5%;
+  font-size: 4rem;
+}
+
+.roller{
+  height: 4.125rem;
+  line-height: 4rem;
+  position: relative;
+  overflow: hidden; 
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  color: #1D3557;
+}
+
+
+#spare-time{
+  font-size: 1rem;
+  font-style: italic;
+  letter-spacing: 1rem;
+  margin-top: 0;
+  color: #A8DADC;
+  
+}
+
+.roller #rolltext {
+  position: absolute;
+  top: 0;
+  animation: slide 5s infinite;  
+}
+
+@keyframes slide {
+  0%{
+    top:0;
+  }
+  25%{
+    top: -4rem;    
+  }
+  50%{
+    top: -8rem;
+  }
+  72.5%{
+    top: -12.25rem;
+  }
+}
+
+@media screen and (max-width: 600px){
+  h1{
+  text-align:center;
+  text-transform: uppercase;
+  color: #F1FAEE; 
+  font-size: 2.125rem;
+}
+  
+  .roller{
+  height: 2.6rem; 
+  line-height: 2.125rem;  
+  }
+  
+  #spare-time {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+  }
+  
+  .roller #rolltext {  
+  animation: slide-mob 5s infinite;  
+}
+  
+  @keyframes slide-mob {
+  0%{
+    top:0;
+  }
+  25%{
+    top: -2.125rem;    
+  }
+  50%{
+    top: -4.25rem;
+  }
+  72.5%{
+    top: -6.375rem;
+  }
+}
+}

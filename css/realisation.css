@@ -55,6 +55,7 @@
         font-size: 16px;
         color: #777;
         font-size: 13px;
+        
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -106,6 +107,11 @@
         font-size: 16px;
         color: #777;
         line-height: 1.6;
+        text-align: justify;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.88em;
     }
 
     /* Animation de fade-in */
