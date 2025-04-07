@@ -863,22 +863,93 @@ background-color: #dbe0e6;
 
 /* footer section*/
 .footer_section {
-  background-color: #333;
+    background-color: #1c1c1c;
+    color: #fff;
+    padding: 50px 0;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    position: relative;
+    box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .footer_section p {
-  margin: 0;
-  padding: 25px 0;
-  color: #ffffff;
-  text-align: center;
-  border-top: 0.8px solid #ffffff;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+    letter-spacing: 1px;
 }
 
 .footer_section a {
-  color: inherit;
-  color: #ff6f61;
-
+    color: #ff9800;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    font-size: 18px;
 }
+
+.footer_section a:hover {
+    color: #fff;
+    text-decoration: underline;
+    transform: translateY(-3px);
+}
+
+.footer_section .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#displayDateYear {
+    font-weight: bold;
+}
+
+.footer_section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: 4px;
+    background: linear-gradient(90deg, #ff5722 0%, #ff9800 100%);
+    transform: scaleX(1.1);
+}
+
+.footer_section p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.footer_section .social-links {
+    margin-top: 20px;
+}
+
+.footer_section .social-links a {
+    color: #ff9800;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer_section .social-links a:hover {
+    transform: translateY(-5px);
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .footer_section {
+        padding: 40px 0;
+    }
+
+    .footer_section p {
+        font-size: 14px;
+    }
+
+    .footer_section .social-links a {
+        font-size: 20px;
+    }
+}
+
 
 
 /* end footer section*/
@@ -1293,11 +1364,11 @@ input:checked + #more {
 
 /* Modifier le texte dynamiquement */
 .read-more::after {
-  content: "Read More";
+  content: "Lire la suite";
 }
 
 input:checked + #more + .read-more::after {
-  content: "Read Less";
+  content: "moins";
 }
 /* Style des cartes */
 .box {

@@ -230,6 +230,8 @@ h4{
     color: #007bff;
     margin-bottom: 5%;
     text-align: center;
+    -swiper-navigation-size: 44px;
+    font-family: Montserrat;
 }
 
 .contact-info .contact-info-box i {
