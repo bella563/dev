@@ -23,3 +23,24 @@ document.addEventListener("DOMContentLoaded", function () {
         updateSlider();
     }, 4000);
 });
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Afficher un message au chargement de la page
+    console.log("Page chargée");
+  
+    // Dynamiser les articles avec un effet au clic
+    const articles = document.querySelectorAll("article");
+  
+    articles.forEach((article, index) => {
+      article.addEventListener("click", function () {
+        alert(`Vous avez cliqué sur l'article ${index + 1}`);
+      });
+    });
+  });
+  
