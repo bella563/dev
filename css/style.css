@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather+Sans:wght@400;700&display=swap");
 
+body{
+  font-family: "Montserrat", Sans-serif;
+margin: 0;
+
+}
 .layout_padding {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -84,7 +89,7 @@ a:focus {
 
 .header_section .header_top {
   padding: 15px 0;
-  background-color: #000000;
+  background-color: #0E4A88;
 }
 
 .header_section .header_top .contact_nav {
@@ -98,10 +103,6 @@ a:focus {
 
 .header_section .header_top .contact_nav a {
   color: #ffffff;
-}
-
-.header_section .header_top .contact_nav a i {
-  color: #ff8a1d;
 }
 
 .header_section .header_bottom {
@@ -354,7 +355,6 @@ a:focus {
   margin: 0 10px;
   padding: 45px 15px;
   background-color: #ffffff;
-  color: #2596be;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
@@ -366,7 +366,14 @@ a:focus {
   display: block;
   justify-content: center;
 }
+.feature_section .feature_container .box h5 {
 
+line-height: 1.33em;
+    color: #0E4A88;
+    font-family: "Montserrat", serif;
+    font-size: 20px;
+    font-weight: bold;
+}
 .feature_section .feature_container .box .img-box svg {
   width: 100%;
   height: auto;
@@ -409,24 +416,40 @@ a:focus {
 }
 
 .about_section .detail-box h2 {
-  text-transform: uppercase;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 36px;
   font-weight: bold;
+  line-height: 1.33em;
+  text-align: center;
+
 }
 
 .about_section .detail-box p {
-  margin-top: 10px;
+  text-align: center;
+    color: #333333;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 2em;
+    padding-left: 8%;
+    padding-right: 8%;
+
 }
 
 .about_section .detail-box a {
-  margin-top: 15px;
-  display: inline-block;
-  font-family: 'Merriweather Sans', sans-serif;
-  text-transform: uppercase;
-  padding: 10px 45px;
-  background-color: #0355cc;
-  border: 1px solid #0355cc;
-  border-radius: 2px;
-  color: #ffffff;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  fill: #FFFFFF;
+  color: #FFFFFF;
+  background-color: #2580C3;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #0C4380;
+  border-radius: 30px 30px 30px 30px;
+  padding: 22px 52px 22px 50px;
+  margin-left: 30%;
+
 }
 
 .about_section .detail-box a:hover {
@@ -756,7 +779,7 @@ background-color: #dbe0e6;
 
 .info_section {
   padding: 75px 0;
-  background-color: #333;
+  background-color: #0C4481;
   text-align: center;
   color: #fff;
 }
@@ -826,7 +849,6 @@ background-color: #dbe0e6;
   background-position: center;
   text-align: center;
   line-height: 80px;
-  background-color: #0355cc;
   color: #ffffff;
 }
 
@@ -863,7 +885,7 @@ background-color: #dbe0e6;
 
 /* footer section*/
 .footer_section {
-    background-color: #1c1c1c;
+    background-color: #0C4481;
     color: #fff;
     padding: 50px 0;
     font-family: 'Arial', sans-serif;
@@ -911,7 +933,7 @@ background-color: #dbe0e6;
     left: 0;
     width: 95%;
     height: 4px;
-    background: linear-gradient(90deg, #ff5722 0%, #ff9800 100%);
+    background: linear-gradient(90deg, white 0%, white 100%);
     transform: scaleX(1.1);
 }
 
@@ -1389,7 +1411,7 @@ input:checked + #more + .read-more::after {
 /* Style des icônes */
 .img-box i {
   font-size: 50px;
-  color: #007bff;
+  color: #0E4A88;
   transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
@@ -1674,4 +1696,166 @@ margin-bottom: 5%;
     top: -6.375rem;
   }
 }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styles généraux */
+.bande {
+  margin-top: 30px;
+  padding: 0; /* Enlever tout padding */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Ombre pour la section */
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch; /* S'assurer que les colonnes prennent toute la hauteur de la section */
+  height: 100vh; /* Hauteur de la fenêtre du navigateur */
+}
+
+.row {
+  display: flex;
+  justify-content: space-between; /* Espacement égal entre les colonnes */
+  align-items: stretch; /* S'assurer que toutes les colonnes sont de la même hauteur */
+  width: 100%; /* Occupation de toute la largeur */
+  margin: 0; /* Enlever les marges */
+}
+
+/* Style des colonnes */
+.elementor-widget-wrap {
+  padding: 0; /* Enlever tout padding interne pour coller les colonnes */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centrer le texte verticalement */
+  align-items: center; /* Centrer le texte horizontalement */
+  height: 100%; 
+  box-shadow: 5px 5px 15px 5px #c9b7b7;
+}
+
+/* Première colonne - Bleu */
+.col1:first-child {
+  background-color: #3498db; /* Bleu */
+  color: white;
+}
+.col1:first-child h1 {
+  color: #FFFFFF;
+  font-family: "Montserrat", serif;
+  font-size: 100px;
+  font-weight: bold;
+  line-height: 0.7em;
+
+
+
+}
+.col1:first-child h2 {
+color: #FFFFFF;
+    font-family: "Montserrat", serif;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.33em;
+  }
+/* Deuxième colonne - Gris */
+.col2:nth-child(2) {
+  background-color: #454652; /* Gris */
+  color: white;
+  padding: 50px;
+}
+.col2:nth-child(2)  svg{
+color: white;
+position: relative;
+display: block;
+}
+.col2:nth-child(2)  h1{
+color: #FFFFFF;
+font-family: "Montserrat", Sans-serif;
+font-size: 100px;
+font-weight: bold;
+line-height: 0.7em;
+display: block;
+width: 1em;
+height: 1em;
+}
+
+/* Troisième colonne - Valeurs (plus grande, blanc, avec animation) */
+.col3:last-child {
+  text-align: center;
+  color: #333333;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.88em;
+  padding: 50px;
+
+}
+.col3:last-child  h2{
+color: #0E4A88;
+    font-family: "Rajdhani", Sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.33em;
+}
+/* Animations sur le survol */
+.elementor-widget-wrap:hover {
+  transform: translateY(-10px); /* Légère élévation au survol */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2); /* Ombre plus grande au survol */
+}
+
+/* Responsivité */
+@media (max-width: 767px) {
+  .col-md-4 {
+      flex: 1 1 100%; /* Colonne pleine largeur sur petits écrans */
+      margin-bottom: 0; /* Enlever les marges */
+  }
+}
+
+/* Responsivité pour les tablettes et écrans moyens */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .col-md-4 {
+      flex: 1 1 33.33%; /* 3 colonnes par ligne */
+  }
+}
+
+/* Amélioration de la mise en page pour les grands écrans */
+@media (min-width: 1025px) {
+  .col-md-4 {
+      flex: 1 1 33.33%; /* 3 colonnes par ligne */
+  }
+}
+
+
+
+
+
+
+@media (max-width: 992px) {
+    .bande {
+      height: 400px;
+      margin-bottom: 100%;     }
+      .nos-valeurs{
+        margin-top: 100%;
+      }
+      .main{
+        margin-top: 100%;
+      }
+      .main span{
+        line-height: 3rem;
+      }
+
 }
