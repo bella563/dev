@@ -16,3 +16,4 @@ document.querySelector(".contact-form").addEventListener("submit", function(even
         alert("Erreur lors de l'envoi du message.");
     });
 });
+

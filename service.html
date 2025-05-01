@@ -6,8 +6,8 @@
   <title>Nos Services - Khouma Compagnie</title>
   <link rel="stylesheet" href="css/service.css" />
   <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
 </head>
@@ -36,8 +36,8 @@
       <div class="header_bottom">
         <div class="container-fluid">
           <nav class="navbar navbar-expand-lg custom_nav-container ">
-            <a class="navbar-brand" href="index.html">
-              <img src="images/logo_khouma.png" alt="" width="152" height="72">
+            <a class="navbar-brand" href="{{ url('/home') }}">
+              <img src="images/logo_khouma.png" alt="" width="90" height="72">
 
             </a>
 
@@ -45,6 +45,8 @@
               <span class=""> </span>
             </button>
 
+          
+         
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ">
                 <li class="nav-item ">
@@ -70,19 +72,13 @@
     </header>
     <!-- end header section -->
     <!-- slider section -->
-   
-      <div class="background-image">
-          <!-- Le contenu de la section, comme le titre et le texte -->
-          <div class="container">
-              <div class="content-box">
-                  <h1 class="animated-title">Transport, Logistique & Génie Civil</h1>
-                  <p class="animated-subtitle">Nous vous offrons des services personnalisés et fiables dans le domaine du transport, de la logistique et du génie civil, en vous garantissant des solutions adaptées à vos besoins spécifiques.</p>
-                  <a href="#" class="cta-button">Découvrez nos services</a>
-              </div>
+      <div class="video-section">
+          <video class="video-bg" autoplay loop muted>
+            <source src="src/service.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la lecture de vidéo.
+          </video>
           </div>
-      </div>
-  
-   
+      </div>   
     <!-- end slider section -->
   </div>
 <!-- Hero -->
@@ -94,9 +90,13 @@
 </section>
 
 <!-- Banniere -->
-<div class="banner-separator text-white text-center">
-  <h2 class="animate__animated animate__fadeIn">🌍 Un service sur mesure, partout au Sénégal</h2>
+<div class="banner-separator text-white text-center animate__animated animate__shakeX animate__infinite animate__slower mx-4">
+  <h2>
+    🌍 Un service sur mesure, partout au Sénégal
+  </h2>
 </div>
+
+
 
 <!-- Services -->
 <section class="services py-5">
@@ -178,7 +178,7 @@
 </section>
 
 <!-- Banniere entre blocs -->
-<div class="banner-separator bg-dark text-white text-center">
+<div class="banner-separator text-white text-center animate__animated animate__shakeX animate__infinite animate__slower mx-4">
   <h2 class="animate__animated animate__fadeInUp">🏗️ Une expertise complète du terrain au ciel</h2>
 </div>
 <section class="container py-5">
@@ -221,23 +221,101 @@
 <section class="cta-fixed d-flex align-items-center justify-content-center text-white text-center">
   <div class="container">
     <h2 class="mb-4 animate__animated animate__fadeInDown">Discutons de votre prochain projet</h2>
-    <a href="mailto:coumbabella98@gmail.com" class="btn btn-light btn-lg animate__animated animate__zoomIn">Nous contacter</a>
+    <a href="mailto:khoumandcompagnie@gmail.com" class="btn btn-light btn-lg animate__animated animate__zoomIn">Nous contacter</a>
   </div>
 </section>
+<!-- info section -->
+<section class="info_section ">
+    <div class="container">
+      <h4>
+        Contactez-nous
+            </h4>
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <div class="info_items">
+            <div class="row">
+              <div class="col-md-4">
+                <a href="">
+                  <div class="item ">
+                    <div class="img-box ">
+                      <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    </div>
+                    <p>
+                 cite senegindia ,Diamniadio,Dakar    
+                                </p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4">
+                <a href="">
+                  <div class="item ">
+                    <div class="img-box ">
+                      <i class="fa fa-phone" aria-hidden="true"></i>
+                    </div>
+                    <p>
+                     (221) 33 892 81 82 - (221) 77 423 43 43 
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4">
+                <a href="">
+                  <div class="item ">
+                    <div class="img-box">
+                      <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </div>
+                    <p>
+                      khoumandcompagnie@gmail.com 
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="social-box">
+      <h4>
+        Suivez nous sur
+      </h4>
+      <div class="box">
+        <a href="Lien Facebook https://www.facebook.com/?ref=homescreenpwa">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+        </a>
+        <a href="https://x.com/khoumacompagnie">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.tiktok.com/@khoumandcompagnie">
+          <i class="fa fa-tiktok" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.instagram.com/khoumandcompagnie/">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </section>
 
-<!-- Footer -->
- <!-- Footer Section -->
- <footer class="footer_section">
-  <div class="container">
-      <p>&copy; <span id="displayDateYear"></span> Tous droits réservés par <a href="#">Khouma et compagnie</a></p>
-  </div>
-</footer>
 
+
+  <!-- end info_section -->
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayDateYear"></span> All Rights Reserved By
+        <a href="#">Khouma and compagnie</a>
+      </p>
+    </div>
+  </footer>
+  <!-- footer section -->
 
 
 
 <!-- Inclure Font Awesome -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
 
 
 </body>

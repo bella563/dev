@@ -40,29 +40,26 @@
   <div class="hero_area">
     <!-- header section strats -->
     <header class="header_section "  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-      <div class="header_top">
-        <div class="container-fluid">
-          <div class="contact_nav">
-            <a href="">
-              <i class="fa fa-phone" aria-hidden="true"></i>
-              <span>
-                Tel : 33 892 81 82
-              </span>
-            </a>
-            <a href="">
-              <i class="fa fa-envelope" aria-hidden="true"></i>
-              <span>
-                Email : khoumandcompagnie@gmail.com
-              </span>
-            </a>
-          </div>
-        </div>
-      </div>
+    <div class="header_top  text-white">
+  <div class="container-fluid">
+    <div class="contact_nav d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
+      <a href="tel:+221338928182" class="mb-2 mb-md-0 text-white text-decoration-none">
+        <i class="fa fa-phone me-2" aria-hidden="true"></i>
+        <span>Tel : 33 892 81 82</span>
+      </a>
+      <a href="mailto:khoumandcompagnie@gmail.com" class="text-white text-decoration-none">
+        <i class="fa fa-envelope me-2" aria-hidden="true"></i>
+        <span>Email : khoumandcompagnie@gmail.com</span>
+      </a>
+    </div>
+  </div>
+</div>
+
       <div class="header_bottom">
         <div class="container-fluid">
           <nav class="navbar navbar-expand-lg custom_nav-container ">
-            <a class="navbar-brand" href="index.html">
-              <img src="images/logo_khouma.png" alt="" width="152" height="72">
+            <a class="navbar-brand" href="{{ url('/home') }}">
+              <img src="images/logo_khouma.png" alt="" width="90" height="72">
 
             </a>
 
@@ -70,6 +67,7 @@
               <span class=""> </span>
             </button>
 
+            
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ">
                 <li class="nav-item ">
@@ -119,7 +117,7 @@
       <div class="feature_container">
         <div class="box">
             <img src="images/transport.png" alt="" width="180" height="137">
-          <h5 class="name">
+          <h5 class="name text-center text-md-start fs-6 fs-md-5 fs-lg-4">
             Transport logistique
           </h5>
         </div>
@@ -129,7 +127,7 @@
             <img src="images/genie.png" alt=""width="180" height="137">
 
             
-          <h5 class="name">
+          <h5 class="name text-center text-md-start fs-6 fs-md-5 fs-lg-4">
             Genie civil,Btp <br>
             Fourniture de matières premières
           </h5>
@@ -143,7 +141,7 @@
           <div class="img-box">
             <img src="images/industrie.jpg" alt="" width="180" height="137">
           </div>
-          <h5 class="name">
+          <h5 class="name text-center text-md-start fs-6 fs-md-5 fs-lg-4">
 Installation /manitance Industrielle         </h5>
         </div>
         
@@ -160,13 +158,13 @@ Installation /manitance Industrielle         </h5>
         <div class="col-lg-5 col-md-6 wow fadeInUp">
           <div class="detail-box " data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
               <h2 >Qui sommes-nous?</h2>
-              <p >
+              <p class="text-start text-md-center px-0 px-lg-5">
                 Khouma Compagnie est une société sénégalaise créée <strong>le 5 mai 2014 </strong>à la SD city du Pôle Urbain de Diamniadio, Bloc 10
                 Nous sommes spécialisés dans le <strong>transport</strong> (gros porteurs BENE), le <strong>génie civil</strong>, et l'<strong>exploitation de carrières</strong> (latérite, gré, sable).
              <br>
                   Grâce à une équipe qualifiée et des équipements de dernière génération, nous offrons des services de haute qualité, en respectant les normes de sécurité et l'environnement. Nous sommes devenus un partenaire de confiance pour plusieurs entreprises au Sénégal.
               </p>
-              <a href="about.html" class="btn btn-primary wow fadeInUp">Voir Plus</a>
+              <a href="{{ url('/about') }}" class="btn btn-primary wow fadeInUp">Voir Plus</a>
           </div>
       </div>
       
@@ -201,63 +199,128 @@ Installation /manitance Industrielle         </h5>
 
   <!-- mission section -->
 
-  <section class="container bande " data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-    <div class="row">
-        <!-- Premier div avec hauteur flexible -->
-        <div class="elementor-widget-wrap elementor-element-populated col-md-4 col1 d-flex align-items-stretch" data-aos="fade-right" data-aos-duration="1000">
-            <div class="elementor-element elementor-element-cf1c633 elementor-widget__width-initial elementor-widget-mobile__width-initial elementor-widget elementor-widget-heading" data-id="cf1c633" data-element_type="widget" data-widget_type="heading.default">
-                <div class="elementor-widget-container">
-                    <h1 class="elementor-heading-title elementor-size-default">28</h1>
-                </div>
-            </div>
-            <div class="elementor-element elementor-element-ac46049 elementor-widget__width-initial elementor-widget-mobile__width-initial elementor-widget elementor-widget-heading" data-id="ac46049" data-element_type="widget" data-widget_type="heading.default">
-                <div class="elementor-widget-container">
-                    <h2 class="elementor-heading-title elementor-size-default">ans</h2>
-                </div>
-            </div>
-            <div class="elementor-element elementor-element-ad23d59 elementor-widget elementor-widget-heading" data-id="ad23d59" data-element_type="widget" data-widget_type="heading.default">
-                <div class="elementor-widget-container">
-                    <h2 class="elementor-heading-title elementor-size-default">d’expérience dans les domaines du BTP</h2>
-                </div>
-            </div>
+  <section class="container bande py-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+    <div class="row gy-4">
+      <!-- Premier div avec hauteur flexible -->
+      <div class="elementor-widget-wrap elementor-element-populated col-12 col-md-4 col1 d-flex flex-column align-items-center text-center text-md-start" data-aos="fade-right" data-aos-duration="1000">
+        <div class="elementor-widget-container">
+          <h1 class="elementor-heading-title elementor-size-default display-4 fw-bold">28</h1>
+          <h2 class="elementor-heading-title elementor-size-default h4">ans</h2>
+          <h2 class="elementor-heading-title elementor-size-default h6">d’expérience dans les domaines du BTP</h2>
         </div>
-
-        <!-- Deuxième div avec hauteur flexible -->
-        <div class="elementor-widget-wrap elementor-element-populated col-md-4 col2 d-flex align-items-stretch" data-aos="fade-up" data-aos-duration="1000">
-            <!-- Icône : Cible (objectif / mission) -->
-            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" style="color: white;margin-left:40%;" fill="#fbbf3f" viewBox="0 0 24 24" >
-                <path d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Zm1 17.93V19a1 1 0 0 0-2 0v.93A8.005 8.005 0 0 1 4.07 13H5a1 1 0 0 0 0-2h-.93A8.005 8.005 0 0 1 11 4.07V5a1 1 0 0 0 2 0v-.93A8.005 8.005 0 0 1 19.93 11H19a1 1 0 0 0 0 2h.93A8.005 8.005 0 0 1 13 19.93ZM12 8a4 4 0 1 0 4 4 4.005 4.005 0 0 0-4-4Zm0 6a2 2 0 1 1 2-2 2.003 2.003 0 0 1-2 2Z"/>
-            </svg>
-    
-            <!-- Nouveau titre -->
-            <h2 class="elementor-heading-title elementor-size-default">Notre mission</h2>
-    
-            <!-- Nouveau texte -->
-            <div class="elementor-element elementor-element-3d9c642 elementor-widget elementor-widget-text-editor" data-id="3d9c642" data-element_type="widget" data-widget_type="text-editor.default">
-                <div class="elementor-widget-container">
-                    <p>
-                        Chez Khouma Compagnie, notre mission est de fournir des services performants en transport, génie civil et exploitation de carrières, 
-                        en intégrant l’innovation, la rigueur et le respect des normes QHSE au centre de nos engagements.
-                    </p>
-                </div>
-            </div>
+      </div>
+  
+      <!-- Deuxième div -->
+      <div class="elementor-widget-wrap elementor-element-populated col-12 col-md-4 col2 d-flex flex-column align-items-center text-center text-md-start" data-aos="fade-up" data-aos-duration="1000">
+        <!-- Icône -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" class="mb-3" fill="#fbbf3f" viewBox="0 0 24 24">
+          <path d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Zm1 17.93V19a1 1 0 0 0-2 0v.93A8.005 8.005 0 0 1 4.07 13H5a1 1 0 0 0 0-2h-.93A8.005 8.005 0 0 1 11 4.07V5a1 1 0 0 0 2 0v-.93A8.005 8.005 0 0 1 19.93 11H19a1 1 0 0 0 0 2h.93A8.005 8.005 0 0 1 13 19.93ZM12 8a4 4 0 1 0 4 4 4.005 4.005 0 0 0-4-4Zm0 6a2 2 0 1 1 2-2 2.003 2.003 0 0 1-2 2Z" />
+        </svg>
+  
+        <h2 class="elementor-heading-title elementor-size-default h5 mb-2">Notre mission</h2>
+        <div class="elementor-widget-container px-3">
+          <p class="mb-0 text-start text-md-center">
+            Chez Khouma Compagnie, notre mission est de fournir des services performants en transport, génie civil et exploitation de carrières, 
+            en intégrant l’innovation, la rigueur et le respect des normes QHSE au centre de nos engagements.
+          </p>
         </div>
-
-        <!-- Troisième div avec hauteur flexible -->
-        <div class="elementor-widget-wrap elementor-element-populated col-md-4 col3 d-flex align-items-stretch" data-aos="fade-left" data-aos-duration="1000">
-            <h2 class="elementor-heading-title elementor-size-default">Notre vision</h2>
-            <span mt-md-2>           
-                À Khouma Compagnie, notre vision est de devenir un leader dans l’industrie du BTP en offrant des solutions innovantes et durables, tout en restant ancrés dans les valeurs d’intégrité, de professionnalisme et de respect de l’environnement. Nous nous engageons à anticiper les besoins de nos clients et à les accompagner dans la réalisation de projets ambitieux et responsables.
-            </span>
-        </div>
+      </div>
+  
+      <!-- Troisième div -->
+      <div class="elementor-widget-wrap elementor-element-populated col-12 col-md-4 col3 d-flex flex-column align-items-center text-center text-md-start" data-aos="fade-left" data-aos-duration="1000">
+        <h2 class="elementor-heading-title elementor-size-default h5 mb-2">Notre vision</h2>
+        <span class="text-start text-md-center">
+          À Khouma Compagnie, notre vision est de devenir un leader dans l’industrie du BTP en offrant des solutions innovantes et durables, tout en restant ancrés dans les valeurs d’intégrité, de professionnalisme et de respect de l’environnement. Nous nous engageons à anticiper les besoins de nos clients et à les accompagner dans la réalisation de projets ambitieux et responsables.
+        </span>
+      </div>
     </div>
-</section>
-
+  </section>
   
   
   <!-- end mission section -->
+     <!--  director section -->
 
- 
+     <section class="py-5 mot-directeur">
+      <div class="container director">
+        
+        <!-- Titre centré -->
+        <div class="row justify-content-center text-center mb-4">
+          <div class="col-lg-8 col-md-10">
+            <h1 class="elementor-heading-title">Mot du Directeur général</h1>
+            <span class="mt-3">Une vision claire, un engagement durable.</span>
+          </div>
+        </div>
+    
+        <!-- Contenu 2 colonnes responsive -->
+        <div class="row align-items-center">
+          <div class="col-md-6 mb-4 mb-md-0"   data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+            <!-- Tu peux ajouter une image ici par exemple -->
+            <img src="images/dg.png"  alt="" style="left: 0; width:100%">
+          </div>
+    
+          <div class="col-md-6" >
+            <p>
+              Chez <strong>Khouma Compagnie</strong>, nous plaçons l’efficacité, la qualité et la rigueur au cœur de notre métier.
+              Chaque projet est pour nous une occasion de bâtir la confiance, d’innover et de répondre aux besoins réels de nos partenaires.
+            </p>
+            <p>
+              Fiers de notre expertise dans les domaines de la sidérurgie, de l’hydraulique et des travaux de manutention, nous avançons
+              avec détermination vers un avenir plus durable et performant.
+            </p>
+          </div>
+        </div>
+    
+      </div>
+    </section>
+    
+   <!-- end director section -->
+        <!--  mission section -->
+
+        <section class="banniere-section">
+    <div class="container">
+      
+      <!-- Row 1 : Titre animé -->
+      <div class="row justify-content-center first-row m-0">
+        <div class="col-12 text-center">
+          <h1 class="titre-mission">Notre mission</h1>
+        </div>
+      </div>
+
+      <!-- Row 2 : Texte simple -->
+      <div class="row align-items-center mt-5">
+  <!-- Colonne gauche : Missions -->
+  <div class="col-lg-6 col-md-12">
+    <div class="mission-item">
+      <span class="numero">1</span>
+      <span class="texte-mission">Transport sécurisé et fiable</span>
+    </div>
+    <div class="mission-item">
+      <span class="numero">2</span>
+      <span class="texte-mission">Logistique intelligente et optimisée</span>
+    </div>
+    <div class="mission-item">
+      <span class="numero">3</span>
+      <span class="texte-mission">Solutions en génie civil innovantes</span>
+    </div>
+    <div class="mission-item">
+      <span class="numero">4</span>
+      <span class="texte-mission">Satisfaction et écoute client</span>
+    </div>
+  </div>
+
+  <!-- Colonne droite : Texte explicatif -->
+  <div class="col-lg-6 col-md-12 text-center mt-4 mt-lg-0">
+  <video width="100%" height="30%" autoplay loop muted playsinline  controls>
+            <source src="src/mission.mp4" type="video/mp4">
+            Votre navigateur ne prend pas en charge la lecture de vidéos.
+        </video> 
+  </div>
+</div>
+
+    </div>
+  </section>
+      <!-- end mission section -->
+
     <!-- valors section  -->
 
       <section class="nos-valeurs ">
@@ -303,7 +366,7 @@ Installation /manitance Industrielle         </h5>
   
   <!-- professional section -->
 
-  <section class="professional_section layout_padding">
+  <section class="professional_section layout_padding"   data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
     <div class="container-fluid"  >
       <div class="row">
         <div class="col-md-6">
@@ -603,7 +666,7 @@ Installation /manitance Industrielle         </h5>
         </div>
       
       </div>
-      <a href="realisation.html">
+      <a href="{{ url('/realisation') }}">
         <button type="button" class="btn btn-primary btn-lg rounded-pill  shadow-lg float-right mr-5">Decouvrir nos Réalisations</button>
       </a>
     </div>
@@ -615,6 +678,72 @@ Installation /manitance Industrielle         </h5>
   <!-- contact section -->
 
   <!-- end contact section -->
+
+  <!--  team section -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <section id="team" class="section bg-gray-100">
+  <div class="container">
+    <div class="row section-heading justify-content-center text-center wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.3s" style="visibility: visible; animation-duration: 0.3s; animation-delay: 0.3s; animation-name: fadeInUp;">
+      <div class="col-lg-8 col-xl-6">
+        <h3 class="h1 bg-primary-after after-50px pb-3 mb-3">Notre Équipe</h3>
+        <div class="lead">Découvrez les experts passionnés qui accompagnent Khouma Compagnie dans sa vision et ses projets industriels d'envergure.</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-sm-6 my-3 wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.3s">
+        <div class="hover-top-in text-center">
+          <div class="overflow-hidden z-index-1 position-relative px-5">
+            <img class="rounded-circle border border-5 border-white shadow" src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="">
+          </div>
+          <div class="mx-2 mx-xl-3 shadow rounded-3 position-relative mt-n4 bg-white p-4 pt-6 mx-4 text-center hover-top--in">
+            <h6 class="fw-700 dark-color mb-1">Aïssatou Diop</h6><small>Responsable Technique</small>
+            <div class="pt-2">
+              <a class="icon-sm bg-primary rounded-circle me-1 text-white" href="#"><i class="bi bi-facebook"></i></a>
+              <a class="icon-sm bg-primary rounded-circle me-1 text-white" href="#"><i class="bi bi-twitter"></i></a>
+              <a class="icon-sm bg-primary rounded-circle me-1 text-white" href="#"><i class="bi bi-linkedin"></i></a>
+              <a class="icon-sm bg-primary rounded-circle me-1 text-white" href="#"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 my-3 wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.3s">
+        <div class="hover-top-in text-center">
+          <div class="overflow-hidden z-index-1 position-relative px-5">
+            <img class="rounded-circle border border-5 border-white shadow" src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="">
+          </div>
+          <div class="mx-2 mx-xl-3 shadow rounded-3 position-relative mt-n4 bg-white p-4 pt-6 mx-4 text-center hover-top--in">
+            <h6 class="fw-700 dark-color mb-1">Mamadou Ba</h6><small>Ingénieur Hydraulique</small>
+            <div class="pt-2">
+              <a class="icon-sm bg-primary rounded-circle me-1 text-white" href="#"><i class="bi bi-facebook"></i></a>
+              <a class="icon-sm bg-primary rounded-circle me-1 text-white" href="#"><i class="bi bi-twitter"></i></a>
+              <a class="icon-sm bg-primary rounded-circle me-1 text-white" href="#"><i class="bi bi-linkedin"></i></a>
+              <a class="icon-sm bg-primary rounded-circle me-1 text-white" href="#"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 my-3 wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.3s">
+        <div class="hover-top-in text-center">
+          <div class="overflow-hidden z-index-1 position-relative px-5">
+            <img class="rounded-circle border border-5 border-white shadow" src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="">
+          </div>
+          <div class="mx-2 mx-xl-3 shadow rounded-3 position-relative mt-n4 bg-white p-4 pt-6 mx-4 text-center hover-top--in">
+            <h6 class="fw-700 dark-color mb-1">Fatou Sarr</h6><small>Consultante Industrielle</small>
+            <div class="pt-2">
+              <a class="icon-sm bg-primary rounded-circle me-1 text-white" href="#"><i class="bi bi-facebook"></i></a>
+              <a class="icon-sm bg-primary rounded-circle me-1 text-white" href="#"><i class="bi bi-twitter"></i></a>
+              <a class="icon-sm bg-primary rounded-circle me-1 text-white" href="#"><i class="bi bi-linkedin"></i></a>
+              <a class="icon-sm bg-primary rounded-circle me-1 text-white" href="#"><i class="bi bi-instagram"></i></a>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- end team section -->
 
 
   <!-- info section -->
@@ -673,16 +802,16 @@ Installation /manitance Industrielle         </h5>
         Suivez nous sur
       </h4>
       <div class="box">
-        <a href="">
+        <a href="Lien Facebook https://www.facebook.com/?ref=homescreenpwa">
           <i class="fa fa-facebook" aria-hidden="true"></i>
         </a>
-        <a href="">
+        <a href="https://x.com/khoumacompagnie">
           <i class="fa fa-twitter" aria-hidden="true"></i>
         </a>
-        <a href="">
-          <i class="fa fa-youtube" aria-hidden="true"></i>
+        <a href="https://www.tiktok.com/@khoumandcompagnie">
+          <i class="fa fa-tiktok" aria-hidden="true"></i>
         </a>
-        <a href="">
+        <a href="https://www.instagram.com/khoumandcompagnie/">
           <i class="fa fa-instagram" aria-hidden="true"></i>
         </a>
       </div>
@@ -703,6 +832,7 @@ Installation /manitance Industrielle         </h5>
     </div>
   </footer>
   <!-- footer section -->
+
 <!-- AOS JS -->
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
@@ -718,7 +848,7 @@ Installation /manitance Industrielle         </h5>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
   <!-- End Google Map -->
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow.js/1.1.2/wow.min.js"></script>*
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow.js/1.1.2/wow.min.js"></script>
   <script src="js/app.js"></script>
 
   <script>new WOW().init();</script>
