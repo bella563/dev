@@ -1672,6 +1672,9 @@ margin-bottom: 5%;
   color: #F1FAEE; 
   font-size: 2.125rem;
 }
+.mot-directeur h1{
+  color: #000000;
+}
   
   .roller{
   height: 2.6rem; 
@@ -1867,6 +1870,7 @@ color: #0E4A88;
       margin-bottom: 100%;     }
       .mot-directeur{
         margin-top: 660px;
+        color: #000000;
       }
       
       .main span{
