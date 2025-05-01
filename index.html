@@ -403,6 +403,33 @@
 
   <!-- service section -->
 
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const checkbox = document.getElementById("toggle-services");
+      const toggleContent = document.querySelector(".toggle-content");
+      const showBtn = document.querySelector(".btn-label");
+      const hideBtn = document.querySelector(".btn-label.btn-hide");
+  
+      // Style initial
+      toggleContent.style.display = "none";
+      hideBtn.style.display = "none";
+  
+      checkbox.addEventListener("change", function () {
+        if (checkbox.checked) {
+          toggleContent.style.display = "flex"; // flex pour bootstrap grid
+          toggleContent.style.flexWrap = "wrap";
+          showBtn.style.display = "none";
+          hideBtn.style.display = "inline-block";
+        } else {
+          toggleContent.style.display = "none";
+          showBtn.style.display = "inline-block";
+          hideBtn.style.display = "none";
+        }
+      });
+    });
+  </script>
+  
   <section class="service_section layout_padding">
     <div class="container">
         <div class="heading_container heading_center">
@@ -670,7 +697,7 @@
         </div>
       
       </div>
-      <a href="realisation.htmlyyy">
+      <a href="realisation.html">
         <button type="button" class="btn btn-primary btn-lg rounded-pill  shadow-lg float-right mr-5">Decouvrir nos Réalisations</button>
       </a>
     </div>
