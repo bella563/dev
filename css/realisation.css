@@ -182,13 +182,10 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
-    transition: opacity 1s ease;
 }
 
 .slide.active {
     display: flex;
-    animation: fadeIn 1s ease-in-out;
 }
 
 .slide__bg {
