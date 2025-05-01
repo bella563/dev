@@ -294,6 +294,21 @@ p {
   animation: color-change 1.5s ease infinite;
 }
 
+
+/* Responsive pour les petits écrans */
+@media (max-width: 768px) {
+  .letter {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .letter {
+    font-size: 1.5rem;
+  }
+}
+
+
 /* Animation pour chaque lettre */
 @keyframes color-change {
   0% {
