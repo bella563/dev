@@ -285,7 +285,7 @@
       <!-- Row 1 : Titre animé -->
       <div class="row justify-content-center first-row m-0">
         <div class="col-12 text-center">
-            <h2 class="display-3 display-sm-4 display-md-2 display-lg-1 text-white">Notre mission</h2>
+            <h2 class="display-3 display-sm-2 display-md-2 display-lg-1 text-white">Notre mission</h2>
         </div>
     </div>
     
@@ -404,31 +404,6 @@
   <!-- service section -->
 
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const checkbox = document.getElementById("toggle-services");
-      const toggleContent = document.querySelector(".toggle-content");
-      const showBtn = document.querySelector(".btn-label");
-      const hideBtn = document.querySelector(".btn-label.btn-hide");
-  
-      // Style initial
-      toggleContent.style.display = "none";
-      hideBtn.style.display = "none";
-  
-      checkbox.addEventListener("change", function () {
-        if (checkbox.checked) {
-          toggleContent.style.display = "flex"; // flex pour bootstrap grid
-          toggleContent.style.flexWrap = "wrap";
-          showBtn.style.display = "none";
-          hideBtn.style.display = "inline-block";
-        } else {
-          toggleContent.style.display = "none";
-          showBtn.style.display = "inline-block";
-          hideBtn.style.display = "none";
-        }
-      });
-    });
-  </script>
   
   <section class="service_section layout_padding">
     <div class="container">
