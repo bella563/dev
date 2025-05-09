@@ -262,3 +262,72 @@ body {
         font-size: 1.4em;
     }
 }
+
+
+/* Modal de confirmation style SweetAlert */
+.modal-content {
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+  }
+  
+  /* Boutons style SweetAlert */
+  .modal-footer .btn {
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  /* Bouton d'annulation */
+  .modal-footer .btn-secondary {
+    background-color: #f44336; /* Rouge */
+    border: none;
+    color: white;
+  }
+  
+  .modal-footer .btn-secondary:hover {
+    background-color: #d32f2f;
+  }
+  
+  /* Bouton de confirmation */
+  .modal-footer .btn-primary {
+    background-color: #4caf50; /* Vert */
+    border: none;
+    color: white;
+  }
+  
+  .modal-footer .btn-primary:hover {
+    background-color: #388e3c;
+  }
+  
+
+
+
+  /* Redéfinit la largeur du modal pour qu'il soit encore plus large */
+.modal-xl-custom {
+  max-width: 2200px; /* Plus large que avant */
+}
+
+/* Style pour les champs de formulaire */
+.modal .form-control:focus {
+  box-shadow: 0 0 0 0.15rem rgba(13, 110, 253, 0.25);
+  border-color: #86b7fe;
+}
+
+/* Amélioration de l’apparence des labels */
+.modal .form-label {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+/* Centrer les boutons à la fin du modal */
+.modal-footer {
+  justify-content: flex-end;
+}
+
+/* Espacement entre les champs */
+.modal-body .mb-3 {
+  margin-bottom: 1.5rem;
+}

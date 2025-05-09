@@ -640,8 +640,9 @@
     </div>
     
    <!-- Modal de modification -->
+<!-- Modal Modifier Annonce -->
 <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-xl-custom modal-dialog-centered">
     <div class="modal-content shadow">
       <div class="modal-header bg-primary text-white">
         <h5 class="modal-title" id="editModalLabel">Modifier l'annonce</h5>
@@ -652,28 +653,28 @@
           <input type="hidden" id="editIndex">
 
           <div class="mb-3">
-            <label for="editTitre" class="form-label">Titre</label>
+            <label for="editTitre" class="form-label fw-semibold">Titre</label>
             <input type="text" class="form-control" id="editTitre" required>
           </div>
 
           <div class="mb-3">
-            <label for="editContenu" class="form-label">Contenu</label>
+            <label for="editContenu" class="form-label fw-semibold">Contenu</label>
             <textarea class="form-control" id="editContenu" rows="4" required></textarea>
           </div>
 
           <div class="mb-3">
-            <label for="editImage" class="form-label">Nouvelle image (facultatif)</label>
+            <label for="editImage" class="form-label fw-semibold">Nouvelle image (facultatif)</label>
             <input type="file" class="form-control" id="editImage" accept="image/*">
           </div>
 
           <div class="mb-3">
-            <label for="editDateExpiration" class="form-label">Date d'expiration</label>
+            <label for="editDateExpiration" class="form-label fw-semibold">Date d'expiration</label>
             <input type="date" class="form-control" id="editDateExpiration" required>
           </div>
 
           <div class="text-end">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
-            <button type="submit" class="btn btn-primary">Enregistrer</button>
+            <button type="submit" class="btn btn-success">Enregistrer</button>
           </div>
         </form>
       </div>
@@ -681,6 +682,27 @@
   </div>
 </div>
 
+
+
+
+<!-- Modal unique pour la confirmation -->
+<div class="modal fade" id="passwordModal" tabindex="-1" aria-labelledby="passwordModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Confirmer la suppression</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+      </div>
+      <div class="modal-body">
+        <input type="password" id="passwordInput" class="form-control" placeholder="Mot de passe" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+        <button type="button" class="btn btn-danger" id="confirmerSuppressionBtn">Confirmer</button>
+      </div>
+    </div>
+  </div>
+</div>
 
   </section>
 
@@ -794,6 +816,10 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.0/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="js/realisation.js" defer></script>
+  <!-- Bootstrap JS (assure-toi que c’est présent et dans cet ordre) -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
