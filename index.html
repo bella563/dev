@@ -87,13 +87,36 @@
                 <li class="nav-item">
                   <a class="nav-link" href="contact.html">Contacts</a>
                 </li>
+                <li class="nav-item">
+                  <button class="btn-annonce" onclick="openModal()">Publier une annonce</button>
+                </li>
+                
               </ul>
             </div>
           </nav>
         </div>
       </div>
     </header>
+    
     <!-- end header section -->
+
+<!-- Popup modal pour le mot de passe -->
+<div id="passwordModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3>Accès privé</h3>
+      <span class="close" onclick="closeModal()">&times;</span>
+    </div>
+    <div class="modal-body">
+      <p>Veuillez entrer le mot de passe pour accéder à la page de publication d'annonce.</p>
+      <input type="password" id="passwordInput" placeholder="Mot de passe" />
+    </div>
+    <div class="modal-footer">
+      <button onclick="verifierMotDePasse()">Valider</button>
+    </div>
+  </div>
+</div>
+
     <!-- slider section -->
    
     <section class="slider_section">

@@ -22,3 +22,31 @@
       }
     });
   });
+
+
+  const modal = document.getElementById("passwordModal");
+
+function openModal() {
+  modal.style.display = "block";
+}
+
+function closeModal() {
+  modal.style.display = "none";
+}
+
+function verifierMotDePasse() {
+  const mdp = document.getElementById("passwordInput").value;
+  if (mdp === "secret2025") 
+    { 
+    window.location.href = "annonce.html";
+  } else {
+    alert("Mot de passe incorrect !");
+  }
+}
+
+window.onclick = function(event) {
+  if (event.target === modal) {
+    closeModal();
+  }
+}
+
